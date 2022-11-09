@@ -8,5 +8,7 @@ function stepHit(curStep){
         FlxTween.tween(FlxG.camera, {zoom: 0.5}, 8.5);
         case 336:
         FlxTween.tween(FlxG.camera, {zoom: 0.7}, 8.5);
+        case 784:
+        FlxTween.tween(FlxG.camera, {zoom: 0.5}, 12);
     }
 }

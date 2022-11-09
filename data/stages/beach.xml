@@ -1,0 +1,15 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.9" name="stage" folder="stages/beach">
+    <sprite name="bg"               x="-650" y="-400"   sprite="sky"/>
+
+    <sprite name="waterness"       x="-650" y="-450"    sprite="seaanim"/>
+
+    <sprite name="cloud mrbeast anim"               x="-650" y="-400"   sprite="cloudsanim"/>
+
+    <sprite name="ground"       x="-650" y="-430"    sprite="land"/>
+    <sprite name="trash"       x="-650" y="-430"    sprite="trash"/>
+    <girlfriend />
+    <sprite name="fgtrash"       x="-687" y="-428.2"   sprite="trashgf"/>
+    <dad/>
+    <boyfriend />
+</stage>
