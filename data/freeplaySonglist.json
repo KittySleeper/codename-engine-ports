@@ -12,6 +12,10 @@
         {
             "name": "Fresh-Bside",
             "icon": "dad-bside"
+        },
+        {
+            "name": "Dadbattle-Bside",
+            "icon": "dad-bside"
         }
     ]
 }
