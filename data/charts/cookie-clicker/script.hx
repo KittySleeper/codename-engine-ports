@@ -1,6 +1,8 @@
 import flixel.text.FlxText;
 import flixel.FlxG;
 import flixel.FlxSprite;
+import lime.app.Application;
+import lime.ui.Window;
 
 var click_text:FlxText = null;
 var cookies_clicked:Int = 0;
@@ -38,6 +40,8 @@ function click() {
     cookie.animation.play('press');
     FlxG.save.data.cookiesthatgotclicked = cookies_clicked;
     FlxG.save.flush();
+    if(cookies_clicked == 100)
+    Application.current.window.alert("CONGRAGULATIONS", "you have 100 clicks impresive");
 }
 
 function update() {
