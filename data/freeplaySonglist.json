@@ -28,6 +28,10 @@
         {
             "name": "Ballistic",
             "icon": "whittyButMadBalls"
+        },
+        {
+            "name": "for-hire",
+            "icon": "dorklysonic"
         }
     ]
 }
