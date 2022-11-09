@@ -2,8 +2,16 @@
     "addOGSongs": true,
     "songs": [
         {
+            "name": "Tutorial-Bside",
+            "icon": "gf-bside"
+        },
+        {
             "name": "Bopeebo-Bside",
-            "icon": "dad"
+            "icon": "dad-bside"
+        },
+        {
+            "name": "Fresh-Bside",
+            "icon": "dad-bside"
         }
     ]
 }
