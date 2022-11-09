@@ -16,6 +16,18 @@
         {
             "name": "Dadbattle-Bside",
             "icon": "dad-bside"
+        },
+        {
+            "name": "Lo-fight",
+            "icon": "whitty"
+        },
+        {
+            "name": "Overhead",
+            "icon": "whitty"
+        },
+        {
+            "name": "Ballistic",
+            "icon": "whittyButMadBalls"
         }
     ]
 }

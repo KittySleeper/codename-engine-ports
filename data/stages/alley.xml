@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.9" name="stage" folder="stages/backalley">
+    <sprite name="bg"               x="-600" y="-200"   sprite="whittyBack"       scroll="0.9" />
+    <sprite name="stageFront"       x="-600" y="600"    sprite="whittyFront"      scroll="0.9" />
+    <girlfriend />
+    <dad />
+    <boyfriend />
+</stage>
