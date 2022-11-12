@@ -3,7 +3,7 @@ import flixel.FlxSprite;
 
 var staticcoolness:FlxSprite = null;
 
-function create() {
+function createPost() {
     dad.visible = false;
     gf.visible = false;
 
@@ -11,14 +11,15 @@ function create() {
     staticcoolness.frames = Paths.getSparrowAtlas('stages/plantasim like prisim/staticie');
     staticcoolness.animation.addByPrefix('idle', 'idle', true);
     staticcoolness.animation.play('idle', true);
-    staticcoolness.pixelPerfectPosition = true;
+    staticcoolness.scale.set(3, 3);
+    staticcoolness.screenCenter();
     staticcoolness.visible = false;
     add(staticcoolness);
 }
 
 function chaosswitch(fleet:Bool) {
     staticcoolness.visible = true;
-    FlxTween.tween(staticcoolness, {alpha: 0.0001}, 0.6);
+    FlxTween.tween(staticcoolness, {alpha: 0.0001}, 1);
     if(fleet == true){
         dad.visible = true;
         boyfriend.visible = false;
