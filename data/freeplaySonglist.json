@@ -30,23 +30,27 @@
             "icon": "whittyButMadBalls"
         },
         {
-            "name": "for-hire",
+            "name": "For-hire",
             "icon": "dorklysonic"
         },
         {
-            "name": "beastfunkin",
+            "name": "Beastfunkin",
             "icon": "mrbeast"
         },
         {
-            "name": "improbable-outset",
+            "name": "Improbable-outset",
             "icon": "trickyMask"
         },
         {
-            "name": "madness",
+            "name": "Madness",
             "icon": "tricky"
         },
         {
-            "name": "cookie-clicker",
+            "name": "Phantasm",
+            "icon": "sonicp"
+        },
+        {
+            "name": "Cookie-clicker",
             "icon": "urmom"
         }
     ]

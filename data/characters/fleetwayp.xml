@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="false" flipX="false" x="432.05" y="318.9" holdTime="6.1">
+    <anim name="idle"   anim="Fleet down"   fps="24"    loop="false" x="0" y="0"/>
+    <anim name="singUP"     anim="Fleet up"     fps="24"    loop="false" x="-22" y="-31"/>
+    <anim name="singLEFT"   anim="Fleet left"   fps="24"    loop="false" x="35" y="22"/>
+    <anim name="singRIGHT"  anim="Fleet right"  fps="24"    loop="false" x="-20" y="14"/>
+    <anim name="singDOWN"   anim="Fleet down"   fps="24"    loop="false" x="0" y="0"/>
+</character>
