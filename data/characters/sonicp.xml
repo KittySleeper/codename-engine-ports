@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character isPlayer="true" flipX="true" x="-256.2" y="350" camx="186.6">
+<character isPlayer="true" flipX="true" x="-256.2" y="350" camx="100.6">
     <anim name="idle"   anim="Sonic idle"   fps="24"    loop="false" x="0" y="0"/>
     <anim name="singUP"     anim="Sonic up0"     fps="24"    loop="false" x="-30" y="-9"/>
     <anim name="singLEFT"   anim="Sonic left0"   fps="24"    loop="false" x="8" y="3"/>
