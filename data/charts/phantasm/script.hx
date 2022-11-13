@@ -35,6 +35,7 @@ function chaosswitch(fleet:Bool) {
     FlxG.sound.play((Paths.sound('stat')), 1, false);
     staticcoolness.visible = true;
     FlxTween.tween(staticcoolness, {alpha: 0.0001}, 0.4);
+    
     if(fleet == true){
         dad.visible = true;
         bgfleet.visible = true;

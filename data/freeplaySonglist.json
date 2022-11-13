@@ -50,6 +50,26 @@
             "icon": "sonicp"
         },
         {
+            "name": "Parish",
+            "icon": "sarvente"
+        },
+        {
+            "name": "Worship",
+            "icon": "sarvente"
+        },
+        {
+            "name": "Zavodila",
+            "icon": "ruv"
+        },
+        {
+            "name": "Gospel",
+            "icon": "sarvente-lucifer"
+        },
+        {
+            "name": "Casanova",
+            "icon": "selever"
+        },
+        {
             "name": "Cookie-clicker",
             "icon": "urmom"
         }

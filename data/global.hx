@@ -1,7 +1,7 @@
 import ("note");
 import("flixel.util.FlxAxes");
 
-function oopponentNoteHit(direction:Int){
+function onDadHit(direction:Int){
     switch direction{
         case 0:
             FlxTween.tween(FlxG.camera, {x: 43}, 0.5);
