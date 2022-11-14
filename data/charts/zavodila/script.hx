@@ -1,9 +1,9 @@
-function shake(Value:Bool) {
+function shake(Value:Bool, Anim:String) {
     FlxG.camera.shake(Value);
-    gf.playAnim('scared');
-    boyfriend.playAnim('scared');
+    gf.playAnim(Anim);
+    boyfriend.playAnim(Anim);
 }
 
 function onDadHit(){
-    shake(0.01);
+    shake(0.01, 'scared');
 }

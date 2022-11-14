@@ -1,0 +1,53 @@
+<!DOCTYPE codename-engine-weeks>
+<config>
+    <characters>
+        <!-- BOYFRIEND -->
+        <char name="bf" scale="0.9" x="80">
+            <anim name="idle"       anim="BF idle dance white"  fps="24"    loop="true" />
+            <anim name="confirm"    anim="BF HEY!!"             fps="24"    loop="false"/>
+        </char>
+
+        <!-- ANIMATION IS AUTOMATICALLY ADDED. IF YOU WANT TO SPECIFY A PREFIX, ADD AN IDLE ANIM LIKE ABOVE. -->
+        <char name="dad"                scale="0.5" x="50" />
+    </characters>
+    <weeks>
+        <!-- SPRITE BUTTONS ARE LOCATED IN "images/menus/storymenu/weeks/" -->
+        <!-- IF NO SPRITE ARE SPECIFIED, "week(week number)" WILL BE USED. -->
+        <!-- IF YOU WANT CUSTOM DIFFICULTIES, ADD THIS: difficulties="easy,normal,hard" -->
+        <!-- DIFFICULTIES SPRITES IN "images/menus/storymenu/difficulties/" -->
+
+        <week name="" chars="dad,bf,gf">
+            <song name="Tutorial-Bside" />
+        </week>
+        <week name="" chars="dad,bf,gf">
+            <song name="Bopeebo-Bside" />
+            <song name="Fresh-Bside" />
+            <song name="Dadbattle-Bside" />
+        </week>
+        <week name="" chars="dad,bf,gf">
+            <song name="Lo-fight" />
+            <song name="Overhead" />
+            <song name="Ballistic" />
+        </week>
+        <week name="" chars="dad,bf,gf">
+            <song name="Lo-fight" />
+            <song name="Overhead" />
+            <song name="Ballistic" />
+        </week>
+        <week name="" chars="dad,bf,gf">
+            <song name="Improbable-outset" />
+            <song name="Madness" />
+        </week>
+        <week name="" chars="dad,bf,gf">
+            <song name="Worship" />
+            <song name="Parish" />
+            <song name="Zavodila" />
+            <song name="Gospel" />
+        </week>
+        <week name="these are all of the mods with only one song i ported have fun beating this week" chars="dad,bf,gf">
+            <song name="For-hire" />
+            <song name="Beastfunkin" />
+            <song name="Phantasm" />
+        </week>
+    </weeks>
+</config>
