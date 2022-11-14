@@ -20,6 +20,10 @@
             <anim name="idle"       anim="mfmidle"  fps="24"    loop="true" />
         </char>
 
+        <char name="random" scale="1.8" x="63" y="-196.2">
+            <anim name="idle"       anim="random mods idle"  fps="18"    loop="true" />
+        </char>
+
         <!-- ANIMATION IS AUTOMATICALLY ADDED. IF YOU WANT TO SPECIFY A PREFIX, ADD AN IDLE ANIM LIKE ABOVE. -->
         <char name="dad"                scale="0.5" x="50" />
         <char name="gf"                 scale="0.5" />
@@ -105,7 +109,7 @@
             <song name="Zavodila" />
             <song name="Gospel" />
         </week>
-        <week name="these are all of the mods with only one song i ported have fun beating this week" chars="none,bf,gf">
+        <week name="these are all of the mods with only one song i ported have fun beating this week" chars="random,bf,gf">
             <song name="For-hire" />
             <song name="Beastfunkin" />
             <!-- <song name="Phantasm" /> song would crah the game cuz it only has regret diff-->
