@@ -7,14 +7,80 @@
             <anim name="confirm"    anim="BF HEY!!"             fps="24"    loop="false"/>
         </char>
 
+        <!-- whit -->
+        <char name="whitty" scale="0.5" x="25.8">
+            <anim name="idle"       anim="idle whit cool man"  fps="24"    loop="true" />
+        </char>
+
+        <char name="tricky" scale="0.6" x="120.8" y="20">
+            <anim name="idle"       anim="tiky idaile fuihnio"  fps="24"    loop="true" />
+        </char>
+
+        <char name="mfm" scale="0.6" x="142.8" y="16.8">
+            <anim name="idle"       anim="mfmidle"  fps="24"    loop="true" />
+        </char>
+
         <!-- ANIMATION IS AUTOMATICALLY ADDED. IF YOU WANT TO SPECIFY A PREFIX, ADD AN IDLE ANIM LIKE ABOVE. -->
         <char name="dad"                scale="0.5" x="50" />
+        <char name="gf"                 scale="0.5" />
+        <char name="spooky"             scale="0.7" x="125" />
+        <char name="pico"               scale="0.7" x="100" y="-30"     flip="true"/>
+        <char name="mom"                scale="0.5" x="50"  y="10"/>
+        <char name="parents-christmas"  scale="0.4" x="150" y="-20" />
+        <char name="senpai"                         x="130" y="-50"/>
+        <char name="tankman"                        x="75" y="-35"/>
     </characters>
     <weeks>
         <!-- SPRITE BUTTONS ARE LOCATED IN "images/menus/storymenu/weeks/" -->
         <!-- IF NO SPRITE ARE SPECIFIED, "week(week number)" WILL BE USED. -->
         <!-- IF YOU WANT CUSTOM DIFFICULTIES, ADD THIS: difficulties="easy,normal,hard" -->
         <!-- DIFFICULTIES SPRITES IN "images/menus/storymenu/difficulties/" -->
+
+        <week name="" chars="none,bf,gf" sprite="tutorial">
+            <song name="Tutorial" />
+        </week>
+
+        <week name="DADDY DEAREST" chars="dad,bf,gf" sprite="week1">
+            <song name="Bopeebo" />
+            <song name="Fresh" />
+            <song name="Dadbattle" />
+        </week>
+
+        <week name="SPOOKY MONTH" chars="spooky,bf,gf" sprite="week2">
+            <song name="Spookeez" />
+            <song name="South" />
+            <song name="Monster" hide="true" />
+        </week>
+
+        <week name="PICO" chars="pico,bf,gf" sprite="week3">
+            <song name="Pico" />
+            <song name="Philly" />
+            <song name="Blammed" />
+        </week>
+
+        <week name="MOMMY MUST MURDER" chars="mom,bf,gf" sprite="week4">
+            <song name="Satin Panties" />
+            <song name="High" />
+            <song name="MILF" />
+        </week>
+
+        <week name="RED SNOW" chars="parents-christmas,bf,gf" sprite="week5">
+            <song name="Cocoa" />
+            <song name="Eggnog" />
+            <song name="Winter-Horrorland" hide="true" />
+        </week>
+
+        <week name="HATING SIMULATOR FT. MOAWLING" chars="senpai,bf,gf" sprite="week6">
+            <song name="Senpai" />
+            <song name="Roses" />
+            <song name="Thorns" hide="true" />
+        </week>
+
+        <week name="TANKMAN" chars="tankman,bf,gf" sprite="week7">
+            <song name="Ugh" />
+            <song name="Guns" />
+            <song name="Stress" />
+        </week>
 
         <week name="" chars="dad,bf,gf">
             <song name="Tutorial-Bside" />
@@ -24,30 +90,25 @@
             <song name="Fresh-Bside" />
             <song name="Dadbattle-Bside" />
         </week>
-        <week name="" chars="dad,bf,gf">
+        <week name="" chars="whitty,bf,gf">
             <song name="Lo-fight" />
             <song name="Overhead" />
             <song name="Ballistic" />
         </week>
-        <week name="" chars="dad,bf,gf">
-            <song name="Lo-fight" />
-            <song name="Overhead" />
-            <song name="Ballistic" />
-        </week>
-        <week name="" chars="dad,bf,gf">
+        <week name="" chars="tricky,bf,gf">
             <song name="Improbable-outset" />
             <song name="Madness" />
         </week>
-        <week name="" chars="dad,bf,gf">
+        <week name="" chars="mfm,bf,gf" difficulties="easy, normal, hard, alt">
             <song name="Worship" />
             <song name="Parish" />
             <song name="Zavodila" />
             <song name="Gospel" />
         </week>
-        <week name="these are all of the mods with only one song i ported have fun beating this week" chars="dad,bf,gf">
+        <week name="these are all of the mods with only one song i ported have fun beating this week" chars="none,bf,gf">
             <song name="For-hire" />
             <song name="Beastfunkin" />
-            <song name="Phantasm" />
+            <!-- <song name="Phantasm" /> song would crah the game cuz it only has regret diff-->
         </week>
     </weeks>
 </config>
