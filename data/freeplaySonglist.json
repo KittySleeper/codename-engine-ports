@@ -70,6 +70,18 @@
             "icon": "selever"
         },
         {
+            "name": "Unemployed",
+            "icon": "benson"
+        },
+        {
+            "name": "Demoson",
+            "icon": "benson-but-fired"
+        },
+        {
+            "name": "Deathmatch",
+            "icon": "dad"
+        },
+        {
             "name": "Cookie-clicker",
             "icon": "urmom"
         }
