@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.9" name="stage" folder="stages/benson/old/">
+    <sprite name="bg"               x="-600" y="-200"   sprite="forestbg"       scroll="1" />
+    <girlfriend />
+    <dad />
+    <boyfriend />
+</stage>

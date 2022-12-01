@@ -33,5 +33,17 @@ function stepHit(curStep){
             FlxG.camera.flash(0xFFFFFF, 0.8);
             boyfriend.visible = false;
             pico.visible = true;
+        case 1024:
+            FlxG.camera.flash(0xFFFFFF, 0.8);
+            pico.visible = false;
+            spookyboiz.visible = true;
+        case 1407:
+            FlxG.camera.flash(0xFFFFFF, 0.8);
+            spookyboiz.visible = false;
+            mom.visible = true;
+        case 1664:
+            FlxG.camera.flash(0xFFFFFF, 0.8);
+            mom.visible = false;
+            boyfriend.visible = true;
 }
 }
