@@ -1,0 +1,21 @@
+{
+    "addOGSongs": true,
+    "songs": [
+        {
+            "name": "Tutorial-Bside",
+            "icon": "gf-bside"
+        },
+        {
+            "name": "Bopeebo-Bside",
+            "icon": "dad-bside"
+        },
+        {
+            "name": "Fresh-Bside",
+            "icon": "dad-bside"
+        },
+        {
+            "name": "Dadbattle-Bside",
+            "icon": "dad-bside"
+        }
+    ]
+}

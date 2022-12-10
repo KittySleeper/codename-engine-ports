@@ -1,8 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<character isPlayer="false" flipX="false" x="0" y="0" holdTime="2.4">
-    <anim name="idle"       anim="SarventeIdle"       fps="24"    loop="false" x="0" y="0"/>
-    <anim name="singUP"     anim="SarventeUp"     fps="24"    loop="false" x="0" y="0"/>
-    <anim name="singLEFT"   anim="SarventeLeft"   fps="24"    loop="false" x="0" y="0"/>
-    <anim name="singRIGHT"  anim="SarventeRight"  fps="24"    loop="false" x="0" y="0"/>
-    <anim name="singDOWN"   anim="SarventeDown"   fps="24"    loop="false" x="0" y="0"/>
-</character>

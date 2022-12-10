@@ -1,0 +1,13 @@
+{
+    "addOGSongs": true,
+    "songs": [
+        {
+            "name": "Unemployed",
+            "icon": "benson"
+        },
+        {
+            "name": "Demoson",
+            "icon": "benson-but-fired"
+        }
+    ]
+}

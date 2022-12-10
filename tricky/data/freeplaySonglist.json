@@ -1,0 +1,13 @@
+{
+    "addOGSongs": true,
+    "songs": [
+        {
+            "name": "improbable-outset",
+            "icon": "trickyMask"
+        },
+        {
+            "name": "madness",
+            "icon": "tricky"
+        }
+    ]
+}

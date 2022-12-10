@@ -1,0 +1,9 @@
+{
+    "addOGSongs": true,
+    "songs": [
+        {
+            "name": "Deathmatch",
+            "icon": "dad"
+        }
+    ]
+}
