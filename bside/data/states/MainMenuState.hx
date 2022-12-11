@@ -19,8 +19,9 @@ function postCreate() {
     members[1].scrollFactor.set();
 
     var overlay:FlxSprite = new FlxSprite(0, 0, Paths.image("menus/bgArt"));
+    overlay.scale.set(1.1, 1.1);
     overlay.color = 0xFFDC7928;
-    overlay.scrollFactor.set();
+    overlay.scrollFactor.set(0, 0.15);
     insert(2, overlay);
 
     magenta.alpha = 0;
