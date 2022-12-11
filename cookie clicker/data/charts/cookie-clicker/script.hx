@@ -45,7 +45,7 @@ function click() {
 }
 
 function update() {
-    click_text.text = "" + cookies_clicked;
+    click_text.text = cookies_clicked;
     if (FlxG.mouse.overlaps(cookie) && FlxG.mouse.justPressed)
     click();
 }

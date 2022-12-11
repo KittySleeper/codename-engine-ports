@@ -1,19 +1,19 @@
 <!DOCTYPE codename-engine-stage>
 <stage zoom="0.5" name="stage" folder="stages/green hills/">
     <girlfriend />
-    <sprite name="bgpart1"               x="-1000" y="-700"   sprite="bg1"       scroll="0.9" scale="8" />
+    <sprite name="bgpart1"               x="-1000" y="-700"   sprite="bg1"       scroll="0.9" scale="8" antialiasing="false"/>
 
-    <sprite name="bgpart2"               x="-1000" y="-465"   sprite="bg2"       scroll="0.7" scale="10" />
+    <sprite name="bgpart2"               x="-1000" y="-465"   sprite="bg2"       scroll="0.7" scale="10" antialiasing="false"/>
 
-    <sprite name="bgpart3"               x="-1000" y="-322.9"   sprite="bg3"       scroll="0.6" scale="10" />
+    <sprite name="bgpart3"               x="-1000" y="-322.9"   sprite="bg3"       scroll="0.6" scale="10" antialiasing="false"/>
 
-    <sprite name="bgpart4"               x="-872" y="-173.2"   sprite="bg4"       scroll="0.3" scale="6" />
+    <sprite name="bgpart4"               x="-872" y="-173.2"   sprite="bg4"       scroll="0.3" scale="6" antialiasing="false"/>
 
-    <sprite name="bgpart5"               x="-1000" y="-700"   sprite="bg5"       scroll="0.2" scale="8" />
+    <sprite name="bgpart5"               x="-1000" y="-700"   sprite="bg5"       scroll="0.2" scale="8" antialiasing="false"/>
 
-    <sprite name="ground"               x="-1000" y="-700"   sprite="GHGround"       scroll="0.9" scale="8" />
+    <sprite name="ground"               x="-1000" y="-700"   sprite="GHGround"       scroll="0.9" scale="8" antialiasing="false"/>
 
-    <sprite name="random objects"               x="-1000" y="-700"   sprite="objects"       scroll="0.2" scale="8" />
+    <sprite name="random objects"               x="-1000" y="-700"   sprite="objects"       scroll="0.2" scale="8" antialiasing="false"/>
     
     <dad x="-1892.23" y="-832.8"/>
     <boyfriend x="-823.5" y="-812.5"/>
