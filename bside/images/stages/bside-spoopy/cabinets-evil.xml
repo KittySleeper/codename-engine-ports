@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="halloween_bg_MONSTER.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cabinets0000" x="2" y="2" width="1294" height="565" frameX="-21" frameY="-9" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0001" x="1298" y="2" width="1315" height="565" frameX="0" frameY="-9" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0002" x="2615" y="2" width="1285" height="572" frameX="-25" frameY="-1" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0003" x="3902" y="2" width="1307" height="572" frameX="-3" frameY="-1" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0004" x="5211" y="2" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0005" x="6498" y="2" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0006" x="2" y="577" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0007" x="1289" y="577" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0008" x="2599" y="577" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0009" x="3886" y="577" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0010" x="5196" y="577" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0011" x="6483" y="577" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0012" x="2" y="1152" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0013" x="1289" y="1152" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0014" x="2599" y="1152" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0015" x="3886" y="1152" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0016" x="5196" y="1152" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0017" x="6483" y="1152" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0018" x="2" y="1727" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0019" x="1289" y="1727" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0020" x="2599" y="1727" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0021" x="3886" y="1727" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0022" x="5196" y="1727" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0023" x="6483" y="1727" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0024" x="2" y="2302" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0025" x="1289" y="2302" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0026" x="2599" y="2302" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0027" x="3886" y="2302" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0028" x="5196" y="2302" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0029" x="6483" y="2302" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0030" x="2" y="2877" width="1285" height="573" frameX="-25" frameY="0" frameWidth="1315" frameHeight="574"/>
+	<SubTexture name="cabinets0031" x="1289" y="2877" width="1308" height="573" frameX="-2" frameY="0" frameWidth="1315" frameHeight="574"/>
+</TextureAtlas>

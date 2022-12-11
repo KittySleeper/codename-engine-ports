@@ -16,6 +16,10 @@
         {
             "name": "Dadbattle-Bside",
             "icon": "dad-bside"
+        },
+        {
+            "name": "Shiver",
+            "icon": "monster-bside"
         }
     ]
 }

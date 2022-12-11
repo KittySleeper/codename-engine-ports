@@ -1,0 +1,11 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.8" name="stage" folder="stages/bside-spoopy">
+	<sprite x="-550" sprite="bg" y="-655" name="bg"/>
+	<sprite x="1515" sprite="pillar" y="-685" name="pillar"/>
+	<sprite x="-210" sprite="cabinets" y="110" name="cabinets">
+		<anim loop="false" fps="24" anim="" name="idle"/>
+	</sprite>
+	<girlfriend/>
+	<boyfriend/>
+	<dad/>
+</stage>
