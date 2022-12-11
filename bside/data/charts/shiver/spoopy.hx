@@ -53,7 +53,7 @@ function stepHit() {
 			playerStrums.members[i].x -= 320;
 		}
 	//ya guys like numbers?
-	case 256, 257, 258, 259, 260, 261, 262, 263, 264:
+	case 256, 257, 258, 259, 260, 261, 262, 263, 264, 272, 281:
 		if (darken != null) {
 			remove(darken);
 			darken.destroy();
