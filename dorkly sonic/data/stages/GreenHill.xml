@@ -1,6 +1,8 @@
 <!DOCTYPE codename-engine-stage>
 <stage zoom="0.5" name="stage" folder="stages/green hills/">
-    <girlfriend />
+    <girlfriend>
+        <property name="visible" type="bool" value="false"/>
+    </girlfriend>
     <sprite name="bgpart1"               x="-1000" y="-700"   sprite="bg1"       scroll="0.9" scale="8" antialiasing="false"/>
 
     <sprite name="bgpart2"               x="-1000" y="-465"   sprite="bg2"       scroll="0.7" scale="10" antialiasing="false"/>
@@ -17,4 +19,5 @@
     
     <dad x="-1892.23" y="-832.8"/>
     <boyfriend x="-823.5" y="-812.5"/>
+    <combo x="-950" y="-550"/>
 </stage>

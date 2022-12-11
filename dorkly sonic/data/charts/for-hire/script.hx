@@ -1,3 +1,22 @@
+function create() {
+    importScript("data/scripts/pixel");
+    pixelNotesForBF = false;
+    enableCameraHacks = false;
+    enablePauseMenu = false;
+    enablePixelUI = false;
+}
+
+function onSongStart()
+    enablePixelUI = true;
+
+function postCreate() {
+    for (i in 0...4)
+        playerStrums.members[i].cameras = [camHUD];
+}
+
+function postUpdate()
+    cpuStrums.members[0].cameras[0].zoom = camHUD.zoom;
+
 function stepHit(curStep){
     switch curStep{
         case 16:
