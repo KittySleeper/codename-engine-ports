@@ -18,6 +18,14 @@
             "icon": "dad-bside"
         },
         {
+            "name": "Spookeez-Bside",
+            "icon": "spooky-bside"
+        },
+        {
+            "name": "South-Bside",
+            "icon": "spooky-bside"
+        },
+        {
             "name": "Shiver",
             "icon": "monster-bside"
         }
