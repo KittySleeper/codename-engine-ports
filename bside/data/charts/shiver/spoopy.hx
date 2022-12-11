@@ -1,6 +1,59 @@
 import funkin.scripting.events.NoteHitEvent;
 import funkin.ui.FunkinText;
 
+var spoopyShader:FunkinShader = new FunkinShader("
+#pragma header
+
+uniform float multX = 0.0;
+uniform float multY = 0.0;
+uniform bool goSpoopy = false;
+
+void main() {
+	vec2 pos = openfl_TextureCoordv;
+	if (goSpoopy) {
+		pos.x += 3 / openfl_TextureSize.x * multX;
+		pos.y += 3 / openfl_TextureSize.y * multY;
+	}
+	vec4 overlay = texture2D(bitmap, pos);
+	vec4 normColor = texture2D(bitmap, openfl_TextureCoordv);
+	if (goSpoopy) {
+		overlay.g = 0;
+		overlay.b *= 0.25;
+		overlay *= 0.5;
+
+		normColor.g = 0;
+		normColor.b *= 0.25;
+		normColor *= 0.5;
+		normColor = mix(normColor, overlay, overlay.a);
+	}
+	gl_FragColor = normColor;
+}
+");
+var shaderPosArray = [
+	{x: -1, y: -1},
+	{x: -0.5, y: -1},
+
+	{x: 0, y: -1},
+	{x: 0.5, y: -1},
+
+	{x: 1, y: -1},
+	{x: 1, y: -0.5},
+
+	{x: 1, y: 0},
+	{x: 1, y: 0.5},
+
+	{x: 1, y: 1},
+	{x: 0.5, y: 1},
+
+	{x: 0, y: 1},
+	{x: -0.5, y: 1},
+
+	{x: -1, y: 1},
+	{x: -1, y: 0.5},
+
+	{x: -1, y: 0},
+	{x: -1, y: -0.5},
+];
 var spoopyBois:Character;
 var darken:FlxSprite;
 var subtitles:FunkinText;
@@ -11,14 +64,22 @@ function postCreate() {
 	dad.visible = false;
 
 	subtitles = new FunkinText(0, 480, 1280, "", 24);
+	subtitles.shader = spoopyShader;
+	spoopyShader.data.goSpoopy.value = [false];
 	subtitles.alignment = "center";
 	subtitles.cameras = [camHUD];
 	add(subtitles);
 }
 
-function onCameraMove(event) {
-	event.position.y += 350 * (curStep < 248 && !curSection.mustHitSection);
+function postUpdate() {
+	var quarterStep:Int = Math.floor((curStepFloat % 2) / 0.125);
+	var shaderPos = shaderPosArray[quarterStep];
+	spoopyShader.data.multX.value = [shaderPos.x];
+	spoopyShader.data.multY.value = [shaderPos.y];
 }
+
+function onCameraMove(event)
+	event.position.y += 350 * (curStep < 248 && !curSection.mustHitSection);
 
 function onDadHit(event:NoteHitEvent) {
 	if (curStep < 248)
@@ -29,9 +90,10 @@ function spoopySubtitles(spoopy:Bool) {
 	subtitles.color = 0xFFFFFFFF - 0xFF00FFB0 * spoopy;
 	var daScale = 1 + 0.5 * spoopy;
 	subtitles.scale.set(daScale, daScale);
+	spoopyShader.data.goSpoopy.value = [spoopy];
 }
 
-function stepHit() {
+function stepHit(curStep:Int) {
   switch (curStep) {
 	case 248:
 		darken = new FlxSprite(0, 0).makeGraphic(1280, 720, 0xFF000000);

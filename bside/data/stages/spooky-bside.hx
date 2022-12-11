@@ -34,12 +34,6 @@ if (PlayState.SONG.song.toLowerCase() == "shiver") {
 		vig.alpha = 0.65;
 		ebilSprites.push(vig);
 		add(vig);
-
-		trace(
-			"\r\n(" + ebilBG.x + ", " + ebilBG.y + ") | (" + bg.x + ", " + bg.y + ")\r\n("
-			+ ebilPil.x + ", " + ebilPil.y + ") | (" + pillar.x + ", " + pillar.y + ")\r\n("
-			+ ebilCab.x + ", " + ebilCab.y + ") | (" + cabinets.x + ", " + cabinets.y + ")"
-		);
 	
 		var timer = new FlxTimer().start(0.1, function(tmr:FlxTimer) {
 			for (sprite in ebilSprites)
