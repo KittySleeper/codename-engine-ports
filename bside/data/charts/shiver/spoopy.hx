@@ -93,6 +93,17 @@ function spoopySubtitles(spoopy:Bool) {
 	spoopyShader.data.goSpoopy.value = [spoopy];
 }
 
+function onSubStateOpen() {
+	if (deleteTimer != null)
+		deleteTimer.active = false;
+}
+
+function onSubStateClose() {
+	if (deleteTimer != null)
+		deleteTimer.active = true;
+}
+
+var deleteTimer:FlxTimer;
 function stepHit(curStep:Int) {
   switch (curStep) {
 	case 248:
@@ -100,7 +111,6 @@ function stepHit(curStep:Int) {
 		darken.scale.set(2, 2);
 		darken.cameras = [camHUD];
 		add(darken);
-		ohNoSpoopyTime();
 
 		spoopyBois.visible = false;
 		dad.visible = true;
@@ -114,14 +124,16 @@ function stepHit(curStep:Int) {
 			cpuStrums.members[i].x -= 2000;
 			playerStrums.members[i].x -= 320;
 		}
-	//ya guys like numbers?
-	case 256, 257, 258, 259, 260, 261, 262, 263, 264, 272, 281:
-		if (darken != null) {
+		//Using a timer because you can't trust lag.
+		deleteTimer = new FlxTimer().start(Conductor.crochet / 500, function(tmr:FlxTimer) {
 			remove(darken);
 			darken.destroy();
 			darken = null;
 			subtitles.text = "What have you brought me?";
-		}
+			deleteTimer = null;
+		});
+
+		ohNoSpoopyTime();
 	case 271:
 		subtitles.text = "Who's the new specimen?";
 	case 290:
