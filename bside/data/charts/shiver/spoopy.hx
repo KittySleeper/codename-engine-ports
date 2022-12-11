@@ -72,8 +72,8 @@ function postCreate() {
 }
 
 function postUpdate() {
-	var quarterStep:Int = Math.floor((curStepFloat % 2) / 0.125);
-	var shaderPos = shaderPosArray[quarterStep];
+	var eighthStep:Int = Math.floor((curStepFloat % 2) / 0.125);
+	var shaderPos = shaderPosArray[eighthStep];
 	spoopyShader.data.multX.value = [shaderPos.x];
 	spoopyShader.data.multY.value = [shaderPos.y];
 }
