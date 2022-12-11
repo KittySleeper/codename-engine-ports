@@ -74,7 +74,7 @@ function stepHit() {
 		subtitles.text = "No one to save you.";
 	case 430:
 		subtitles.text = "No way out inside your view.";
-	case 516:
+	case 512:
 		subtitles.text = "Cut him up, and then melt him down.";
 	case 576:
 		spoopySubtitles(true);

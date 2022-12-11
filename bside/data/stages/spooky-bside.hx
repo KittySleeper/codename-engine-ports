@@ -1,45 +1,70 @@
-import flixel.graphics.frames.FlxAtlasFrames;
-import flixel.util.FlxTimer;
+if (PlayState.SONG.song.toLowerCase() == "shiver") {
+	import flixel.util.FlxTimer;
 
-var bitmaps = [];
-var cabXML:String;
+	var normSprites = [bg, pillar, cabinets];
+	var ebilSprites = [];
+	
+	function create() {
+		var ebilBG = bg.clone();
+		ebilBG.loadGraphic(Paths.image("stages/bside-spoopy/bg-evil"));
+		ebilSprites.push(ebilBG);
+		ebilBG.x = bg.x - 300;
+		ebilBG.y = bg.y - 200;
+		add(ebilBG);
+	
+		var ebilPil = pillar.clone();
+		ebilPil.loadGraphic(Paths.image("stages/bside-spoopy/pillar-evil"));
+		ebilSprites.push(ebilPil);
+		ebilPil.x = pillar.x;
+		ebilPil.y = pillar.y;
+		add(ebilBG);
+	
+		var ebilCab = cabinets.clone();
+		ebilCab.frames = Paths.getSparrowAtlas("stages/bside-spoopy/cabinets-evil");
+		ebilCab.animation.addByPrefix("idle", "");
+		ebilSprites.push(ebilCab);
+		ebilCab.x = cabinets.x;
+		ebilCab.y = cabinets.y;
+		add(ebilCab);
+	
+		var vig = new FlxSprite(0, 0, Paths.image("stages/bside-spoopy/vignette"));
+		vig.setGraphicSize(1280, 720);
+		vig.cameras = [camHUD];
+		vig.updateHitbox();
+		vig.alpha = 0.65;
+		ebilSprites.push(vig);
+		add(vig);
 
-function create() {
-	/*var sprites = [];
-	for (preload in ["bg-evil", "pillar-evil", "cabinets-evil", "vignette"]) {
-		var sprite = new FlxSprite(0, 0, Paths.image("stages/bside-spoopy/" + preload));
-		add(sprite);
-		sprites.push(sprite);
+		trace(
+			"\r\n(" + ebilBG.x + ", " + ebilBG.y + ") | (" + bg.x + ", " + bg.y + ")\r\n("
+			+ ebilPil.x + ", " + ebilPil.y + ") | (" + pillar.x + ", " + pillar.y + ")\r\n("
+			+ ebilCab.x + ", " + ebilCab.y + ") | (" + cabinets.x + ", " + cabinets.y + ")"
+		);
+	
+		var timer = new FlxTimer().start(0.1, function(tmr:FlxTimer) {
+			for (sprite in ebilSprites)
+				remove(sprite);
+		});
 	}
-	var timer = new FlxTimer().start(0.1, function(tmr:FlxTimer) {
-		for (sprite in sprites) {
-			remove(sprite);
-			sprite.destroy();
+	
+	function postCreate()
+		scripts.publicVariables.set("ohNoSpoopyTime", ohNoSpoopyTime);
+	
+	function ohNoSpoopyTime() {
+		gf.visible = false;
+	
+		for (i in 0...normSprites.length) {
+			remove(normSprites[i]);
+			add(ebilSprites[i]);
+			stage.stageSprites.set(normSprites[i].name, ebilSprites[i]);
+			normSprites[i].destroy();
 		}
-	});*/
-	for (preload in ["bg-evil", "pillar-evil", "cabinets-evil", "vignette"]) {
-		bitmaps.push(Assets.getBitmapData(Paths.image("stages/bside-spoopy/" + preload)));
+		add(ebilSprites[3]);
+		stage.stageSprites.set("vignette", ebilSprites[3]);
 	}
-	cabXML = Assets.getText(Paths.file('images/stages/bside-spoopy/cabinets-evil.xml'));
-}
 
-function postCreate()
-	scripts.publicVariables.set("ohNoSpoopyTime", ohNoSpoopyTime);
-
-function ohNoSpoopyTime() {
-	gf.visible = false;
-
-	bg.loadGraphic(bitmaps[0]);
-	pillar.loadGraphic(bitmaps[1]);
-	cabinets.frames = FlxAtlasFrames.fromSparrow(bitmaps[2], cabXML);
-	cabinets.animation.addByPrefix("idle", "");
-	cabinets.animation.play("idle");
-
-	var vig = new FlxSprite(0, 0, bitmaps[3]);
-	vig.alpha = 0.65;
-	vig.cameras = [camHUD];
-	vig.setGraphicSize(1280, 720);
-	vig.updateHitbox();
-	vig.scrollFactor.set();
-	add(vig);
+	function beatHit(curBeat:Int) {
+		if (curBeat >= 62)
+			ebilSprites[2].animation.play("idle", true);
+	}
 }
