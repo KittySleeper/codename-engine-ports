@@ -1,5 +1,6 @@
 import funkin.scripting.events.NoteHitEvent;
 import funkin.ui.FunkinText;
+import funkin.game.HealthIcon;
 
 var spoopyShader:FunkinShader = new FunkinShader("
 #pragma header
@@ -57,11 +58,17 @@ var shaderPosArray = [
 var spoopyBois:Character;
 var darken:FlxSprite;
 var subtitles:FunkinText;
+var spoopyboiziconzcweil:HealthIcon;
 
 function postCreate() {
 	spoopyBois = new Character(100, 100, "spooky-bside");
 	insert(members.indexOf(dad), spoopyBois);
 	dad.visible = false;
+	iconP2.visible = false;
+	spoopyboiziconzcweil = new HealthIcon("spooky-bside", false);
+	spoopyboiziconzcweil.cameras = [camHUD];
+	add(spoopyboiziconzcweil);
+
 
 	subtitles = new FunkinText(0, 480, 1280, "", 24);
 	subtitles.shader = spoopyShader;
@@ -76,6 +83,11 @@ function postUpdate() {
 	var shaderPos = shaderPosArray[eighthStep];
 	spoopyShader.data.multX.value = [shaderPos.x];
 	spoopyShader.data.multY.value = [shaderPos.y];
+}
+
+function update() {
+	spoopyboiziconzcweil.y = iconP2.y;
+	spoopyboiziconzcweil.x = iconP2.x;
 }
 
 function onCameraMove(event)
@@ -113,6 +125,8 @@ function stepHit(curStep:Int) {
 		add(darken);
 
 		spoopyBois.visible = false;
+		spoopyboiziconzcweil.visible = false;
+		iconP2.visible = true;
 		dad.visible = true;
 
 		healthBar.alpha = 0.5;
