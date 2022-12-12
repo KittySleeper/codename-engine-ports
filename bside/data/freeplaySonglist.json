@@ -1,5 +1,5 @@
 {
-    "addOGSongs": true,
+    "addOGSongs": false,
     "songs": [
         {
             "name": "Tutorial-Bside",
