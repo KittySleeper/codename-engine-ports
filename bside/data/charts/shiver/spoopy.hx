@@ -78,16 +78,20 @@ function postCreate() {
 	add(subtitles);
 }
 
+function onCountdown()
+	spoopyBois.dance();
+
 function postUpdate() {
 	var eighthStep:Int = Math.floor((curStepFloat % 2) / 0.125);
 	var shaderPos = shaderPosArray[eighthStep];
 	spoopyShader.data.multX.value = [shaderPos.x];
 	spoopyShader.data.multY.value = [shaderPos.y];
-}
 
-function update() {
 	spoopyboiziconzcweil.y = iconP2.y;
 	spoopyboiziconzcweil.x = iconP2.x;
+	spoopyboiziconzcweil.scale = iconP2.scale;
+	spoopyboiziconzcweil.health = iconP2.health;
+	spoopyboiziconzcweil.updateHitbox();
 }
 
 function onCameraMove(event)
@@ -129,11 +133,12 @@ function stepHit(curStep:Int) {
 		iconP2.visible = true;
 		dad.visible = true;
 
-		healthBar.alpha = 0.5;
+		health = 0.05;
+		healthBar.alpha = 0.25;
 		healthBarBG.alpha = 0.5;
-		accuracyTxt.alpha = 0.5;
-		missesTxt.alpha = 0.5;
-		scoreTxt.alpha = 0.5;
+		accuracyTxt.alpha = 0.25;
+		missesTxt.alpha = 0.25;
+		scoreTxt.alpha = 0.25;
 		for (i in 0...4) {
 			cpuStrums.members[i].x -= 2000;
 			playerStrums.members[i].x -= 320;
@@ -157,7 +162,7 @@ function stepHit(curStep:Int) {
 	case 385:
 		subtitles.text = "No need to struggle.";
 	case 398:
-		subtitles.text = "Hush now, It'll be over soon.";
+		subtitles.text = "Hush now, it'll be over soon.";
 	case 417:
 		subtitles.text = "No one to save you.";
 	case 430:
@@ -183,7 +188,7 @@ function stepHit(curStep:Int) {
 	case 770:
 		subtitles.text = "No need to struggle.";
 	case 782:
-		subtitles.text = "Hush now, It'll be over soon.";
+		subtitles.text = "Hush now, it'll be over soon.";
 	case 802:
 		subtitles.text = "No one to save you.";
 	case 814:
@@ -217,11 +222,25 @@ function stepHit(curStep:Int) {
 	case 1280:
 		subtitles.text = "No need to struggle.";
 	case 1294:
-		subtitles.text = "Hush now, It'll be over soon.";
+		subtitles.text = "Hush now, it'll be over soon.";
 	case 1312:
 		subtitles.text = "No one to save you.";
 	case 1326:
 		subtitles.text = "No way out inside your view.";
+	case 1408:
+		camHUD.flash(0xFFFF0040, 0.5);
+		defaultCamZoom += 0.3;
+		dad.visible = false;
+		iconP2.visible = false;
+		health = 0.05;
+		accuracyTxt.alpha = 0;
+		missesTxt.alpha = 0;
+		scoreTxt.alpha = 0;
+	case 1536:
+		darken = new FlxSprite(0, 0).makeGraphic(1280, 720, 0xFF000000);
+		darken.scale.set(2, 2);
+		darken.cameras = [camHUD];
+		add(darken);
   }
 }
 
