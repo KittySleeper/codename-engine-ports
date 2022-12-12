@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tankRIghtHomie.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bikecolor2 instance 10000" x="2" y="2" width="644" height="602" frameX="0" frameY="-2" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10001" x="648" y="2" width="641" height="602" frameX="-2" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10002" x="648" y="2" width="641" height="602" frameX="-2" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10003" x="1291" y="2" width="639" height="600" frameX="-3" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10004" x="1291" y="2" width="639" height="600" frameX="-3" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10005" x="2" y="606" width="637" height="600" frameX="-4" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10006" x="2" y="606" width="637" height="600" frameX="-4" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10007" x="641" y="606" width="636" height="599" frameX="-5" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10008" x="1279" y="606" width="636" height="599" frameX="-5" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10009" x="2" y="1208" width="636" height="599" frameX="-5" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10010" x="2" y="1208" width="636" height="599" frameX="-5" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10011" x="2" y="1208" width="636" height="599" frameX="-5" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10012" x="2" y="1208" width="636" height="599" frameX="-5" frameY="0" frameWidth="644" frameHeight="604"/>
+	<SubTexture name="bikecolor2 instance 10013" x="2" y="1208" width="636" height="599" frameX="-5" frameY="0" frameWidth="644" frameHeight="604"/>
+</TextureAtlas>

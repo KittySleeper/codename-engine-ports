@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bside_gf_tankguysTEST.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Guy0Appear0000" x="2" y="2" width="392" height="330" frameX="0" frameY="-216" frameWidth="626" frameHeight="546"/>
+	<SubTexture name="Guy0Appear0001" x="396" y="2" width="393" height="361" frameX="-154" frameY="-72" frameWidth="626" frameHeight="546"/>
+	<SubTexture name="Guy0Appear0002" x="791" y="2" width="392" height="370" frameX="-202" frameY="-28" frameWidth="626" frameHeight="546"/>
+	<SubTexture name="Guy0Appear0003" x="1185" y="2" width="393" height="375" frameX="-225" frameY="-6" frameWidth="626" frameHeight="546"/>
+	<SubTexture name="Guy0Appear0004" x="1621" y="379" width="393" height="375" frameX="-233" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Appear0005" x="1621" y="379" width="393" height="375" frameX="-233" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Appear0006" x="1621" y="379" width="393" height="375" frameX="-233" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Appear0007" x="1621" y="379" width="393" height="375" frameX="-233" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0000" x="1580" y="2" width="431" height="371" frameX="0" frameY="-9" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0001" x="1580" y="2" width="431" height="371" frameX="0" frameY="-9" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0002" x="2" y="379" width="415" height="372" frameX="-3" frameY="-4" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0003" x="2" y="379" width="415" height="372" frameX="-3" frameY="-4" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0004" x="419" y="379" width="401" height="374" frameX="-5" frameY="-1" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0005" x="419" y="379" width="401" height="374" frameX="-5" frameY="-1" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0006" x="822" y="379" width="400" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0007" x="1224" y="379" width="395" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0008" x="1224" y="379" width="395" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0009" x="1621" y="379" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0010" x="1621" y="379" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0011" x="1621" y="379" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0012" x="1621" y="379" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0013" x="1621" y="379" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Bop0014" x="1621" y="379" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Die0000" x="1621" y="379" width="393" height="375" frameX="0" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy0Die0001" x="2" y="756" width="297" height="284" frameX="-47" frameY="-45" frameWidth="393" frameHeight="375"/>
+	<SubTexture name="Guy0Die0002" x="301" y="756" width="201" height="192" frameX="-94" frameY="-91" frameWidth="393" frameHeight="375"/>
+	<SubTexture name="Guy0Die0003" x="504" y="756" width="104" height="100" frameX="-142" frameY="-137" frameWidth="393" frameHeight="375"/>
+	<SubTexture name="Guy0Die0004" x="610" y="756" width="11" height="8" frameX="-187" frameY="-183" frameWidth="393" frameHeight="375"/>
+	<SubTexture name="Guy1Appear0000" x="623" y="756" width="392" height="330" frameX="0" frameY="-216" frameWidth="626" frameHeight="546"/>
+	<SubTexture name="Guy1Appear0001" x="1017" y="756" width="393" height="361" frameX="-154" frameY="-72" frameWidth="626" frameHeight="546"/>
+	<SubTexture name="Guy1Appear0002" x="1412" y="756" width="392" height="370" frameX="-202" frameY="-28" frameWidth="626" frameHeight="546"/>
+	<SubTexture name="Guy1Appear0003" x="2" y="1128" width="393" height="375" frameX="-225" frameY="-6" frameWidth="626" frameHeight="546"/>
+	<SubTexture name="Guy1Appear0004" x="1621" y="379" width="393" height="375" frameX="-233" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Appear0005" x="1621" y="379" width="393" height="375" frameX="-233" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Appear0006" x="1621" y="379" width="393" height="375" frameX="-233" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Appear0007" x="1621" y="379" width="393" height="375" frameX="-233" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0000" x="397" y="1128" width="431" height="371" frameX="0" frameY="-9" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0001" x="397" y="1128" width="431" height="371" frameX="0" frameY="-9" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0002" x="830" y="1128" width="415" height="372" frameX="-3" frameY="-4" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0003" x="830" y="1128" width="415" height="372" frameX="-3" frameY="-4" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0004" x="1247" y="1128" width="401" height="374" frameX="-5" frameY="-1" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0005" x="1247" y="1128" width="401" height="374" frameX="-5" frameY="-1" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0006" x="2" y="1505" width="400" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0007" x="404" y="1505" width="395" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0008" x="404" y="1505" width="395" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0009" x="801" y="1505" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0010" x="801" y="1505" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0011" x="801" y="1505" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0012" x="801" y="1505" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0013" x="801" y="1505" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Bop0014" x="801" y="1505" width="393" height="375" frameX="-6" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Die0000" x="801" y="1505" width="393" height="375" frameX="0" frameY="0" frameWidth="431" frameHeight="380"/>
+	<SubTexture name="Guy1Die0001" x="1196" y="1505" width="297" height="284" frameX="-47" frameY="-45" frameWidth="393" frameHeight="375"/>
+	<SubTexture name="Guy1Die0002" x="1495" y="1505" width="201" height="192" frameX="-94" frameY="-91" frameWidth="393" frameHeight="375"/>
+	<SubTexture name="Guy1Die0003" x="1698" y="1505" width="104" height="100" frameX="-142" frameY="-137" frameWidth="393" frameHeight="375"/>
+	<SubTexture name="Guy1Die0004" x="610" y="756" width="11" height="8" frameX="-187" frameY="-183" frameWidth="393" frameHeight="375"/>
+</TextureAtlas>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tankBGFGGUys.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="buddiesGroup0000" x="2" y="2" width="2028" height="497" frameX="-2" frameY="-12" frameWidth="2032" frameHeight="509"/>
+	<SubTexture name="buddiesGroup0001" x="2" y="2" width="2028" height="497" frameX="-2" frameY="-12" frameWidth="2032" frameHeight="509"/>
+	<SubTexture name="buddiesGroup0002" x="2032" y="2" width="2026" height="500" frameX="-3" frameY="-9" frameWidth="2032" frameHeight="509"/>
+	<SubTexture name="buddiesGroup0003" x="2032" y="2" width="2026" height="500" frameX="-3" frameY="-9" frameWidth="2032" frameHeight="509"/>
+	<SubTexture name="buddiesGroup0004" x="2" y="504" width="2030" height="506" frameX="-1" frameY="-3" frameWidth="2032" frameHeight="509"/>
+	<SubTexture name="buddiesGroup0005" x="2" y="504" width="2030" height="506" frameX="-1" frameY="-3" frameWidth="2032" frameHeight="509"/>
+	<SubTexture name="buddiesGroup0006" x="2034" y="504" width="2030" height="509" frameX="-1" frameY="0" frameWidth="2032" frameHeight="509"/>
+	<SubTexture name="buddiesGroup0007" x="2034" y="504" width="2030" height="509" frameX="-1" frameY="0" frameWidth="2032" frameHeight="509"/>
+	<SubTexture name="buddiesGroup0008" x="2" y="1015" width="2032" height="509"/>
+	<SubTexture name="buddiesGroup0009" x="2" y="1015" width="2032" height="509"/>
+	<SubTexture name="buddiesGroup0010" x="2" y="1015" width="2032" height="509"/>
+	<SubTexture name="buddiesGroup0011" x="2" y="1015" width="2032" height="509"/>
+	<SubTexture name="buddiesGroup0012" x="2" y="1015" width="2032" height="509"/>
+	<SubTexture name="buddiesGroup0013" x="2" y="1015" width="2032" height="509"/>
+</TextureAtlas>

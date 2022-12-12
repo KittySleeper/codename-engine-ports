@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pico-killin-assetss22.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Run0000" x="2" y="2" width="427" height="478"/>
+	<SubTexture name="Run0001" x="2" y="2" width="427" height="478"/>
+	<SubTexture name="Run0002" x="2" y="2" width="427" height="478"/>
+	<SubTexture name="Run0003" x="431" y="2" width="427" height="478"/>
+	<SubTexture name="Run0004" x="431" y="2" width="427" height="478"/>
+	<SubTexture name="Run0005" x="860" y="2" width="427" height="478"/>
+	<SubTexture name="Run0006" x="860" y="2" width="427" height="478"/>
+	<SubTexture name="Run0007" x="1289" y="2" width="427" height="478"/>
+	<SubTexture name="Run0008" x="1289" y="2" width="427" height="478"/>
+	<SubTexture name="Run0009" x="1289" y="2" width="427" height="478"/>
+	<SubTexture name="Run0010" x="1718" y="2" width="427" height="478"/>
+	<SubTexture name="Run0011" x="1718" y="2" width="427" height="478"/>
+	<SubTexture name="Run0012" x="2147" y="2" width="427" height="478"/>
+	<SubTexture name="Run0013" x="2147" y="2" width="427" height="478"/>
+	<SubTexture name="Shot High0000" x="2576" y="2" width="1046" height="623"/>
+	<SubTexture name="Shot High0001" x="3624" y="2" width="1046" height="623"/>
+	<SubTexture name="Shot High0002" x="4672" y="2" width="1046" height="623"/>
+	<SubTexture name="Shot High0003" x="5720" y="2" width="1046" height="623"/>
+	<SubTexture name="Shot High0004" x="5720" y="2" width="1046" height="623"/>
+	<SubTexture name="Shot High0005" x="6768" y="2" width="1046" height="623"/>
+	<SubTexture name="Shot High0006" x="2" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0007" x="1050" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0008" x="2098" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0009" x="2098" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0010" x="2098" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0011" x="2098" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0012" x="3146" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0013" x="2098" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0014" x="3146" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0015" x="2098" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0016" x="3146" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot High0017" x="2098" y="627" width="1046" height="623"/>
+	<SubTexture name="Shot Low0000" x="4194" y="627" width="1023" height="620"/>
+	<SubTexture name="Shot Low0001" x="5219" y="627" width="1023" height="620"/>
+	<SubTexture name="Shot Low0002" x="6244" y="627" width="1023" height="620"/>
+	<SubTexture name="Shot Low0003" x="2" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0004" x="1027" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0005" x="2052" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0006" x="3077" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0007" x="4102" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0008" x="5127" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0009" x="6152" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0010" x="6152" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0011" x="6152" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0012" x="2" y="1874" width="1023" height="620"/>
+	<SubTexture name="Shot Low0013" x="6152" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0014" x="2" y="1874" width="1023" height="620"/>
+	<SubTexture name="Shot Low0015" x="6152" y="1252" width="1023" height="620"/>
+	<SubTexture name="Shot Low0016" x="2" y="1874" width="1023" height="620"/>
+	<SubTexture name="Shot Low0017" x="6152" y="1252" width="1023" height="620"/>
+</TextureAtlas>

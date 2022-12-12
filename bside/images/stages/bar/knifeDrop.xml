@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="knifeDrop.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="knife drop0000" x="2" y="2" width="228" height="188" frameX="-4" frameY="-99" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0001" x="232" y="2" width="201" height="211" frameX="0" frameY="-46" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0002" x="435" y="2" width="181" height="217" frameX="-42" frameY="-14" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0003" x="2" y="2" width="228" height="188" frameX="-4" frameY="-2" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0004" x="2" y="2" width="228" height="188" frameX="-4" frameY="0" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0005" x="232" y="2" width="201" height="211" frameX="0" frameY="-7" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0006" x="435" y="2" width="181" height="217" frameX="-42" frameY="-23" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0007" x="2" y="2" width="228" height="188" frameX="-4" frameY="-75" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0008" x="618" y="2" width="201" height="212" frameX="0" frameY="-181" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0009" x="618" y="2" width="201" height="212" frameX="0" frameY="-351" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0010" x="2" y="221" width="241" height="63" frameX="-15" frameY="-468" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0011" x="2" y="221" width="241" height="63" frameX="-15" frameY="-468" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0012" x="245" y="221" width="217" height="75" frameX="-26" frameY="-447" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0013" x="464" y="221" width="220" height="69" frameX="-25" frameY="-464" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0014" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0015" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0016" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0017" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0018" x="907" y="221" width="1" height="1" frameX="-41" frameY="-515" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0019" x="907" y="221" width="1" height="1" frameX="-41" frameY="-515" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0020" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0021" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0022" x="910" y="221" width="1" height="1" frameX="-41" frameY="-515" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0023" x="910" y="221" width="1" height="1" frameX="-41" frameY="-515" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0024" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0025" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0026" x="913" y="221" width="1" height="1" frameX="-41" frameY="-515" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0027" x="913" y="221" width="1" height="1" frameX="-41" frameY="-515" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0028" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+	<SubTexture name="knife drop0029" x="686" y="221" width="219" height="70" frameX="-25" frameY="-462" frameWidth="256" frameHeight="563"/>
+</TextureAtlas>

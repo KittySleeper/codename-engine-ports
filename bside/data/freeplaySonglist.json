@@ -28,6 +28,19 @@
         {
             "name": "Shiver",
             "icon": "monster-bside"
+        },
+        {
+            "name": "Ugh-Bside",
+            "icon": "tankman-bside"
+        },
+        {
+            "name": "Guns-Bside",
+            "icon": "tankman-bside"
+        },
+        {
+            "name": "Stress-Bside",
+            "icon": "tankman-bside",
+            "difficulties": ["NORMAL"]
         }
     ]
 }
