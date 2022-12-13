@@ -1,13 +1,11 @@
 import StringTools;
 
-var normOnDance;
-var normAnimFinish;
 var leftDude:FlxSprite;
 var rightDude:FlxSprite;
-var leftCooldown:Int = 32;
-var rightCooldown:Int = 32;
-var SMACCEMleft:Int = 30;
-var SMACCEMright:Int = 30;
+var leftCooldown:Int = 40;
+var rightCooldown:Int = 40;
+var SMACCEMleft:Bool = false;
+var SMACCEMright:Bool = false;
 
 function postCreate() {
 	for (i in 0...4) {
@@ -17,22 +15,20 @@ function postCreate() {
 	for (healthThing in [healthBar, healthBarBG, iconP1, iconP2, scoreTxt, missesTxt, accuracyTxt])
 		healthThing.y += 300;
 
-	normOnDance = gf.script.get("onDance");
-
 	leftDude = new FlxSprite(250, 200);
-	leftDude.flipX = true;
 	leftDude.frames = Paths.getSparrowAtlas("stages/bar/bgGuys");
+	leftDude.scrollFactor.set(0.95, 0.95);
 	leftDude.antialiasing = true;
 	leftDude.visible = false;
+	leftDude.flipX = true;
 	insert(members.indexOf(gf), leftDude);
 
 	rightDude = new FlxSprite(700, 200);
 	rightDude.frames = Paths.getSparrowAtlas("stages/bar/bgGuys");
+	rightDude.scrollFactor.set(0.95, 0.95);
 	rightDude.antialiasing = true;
 	rightDude.visible = false;
 	insert(members.indexOf(gf), rightDude);
-
-	normAnimFinish = rightDude.animation.finishCallback;
 
 	for (i in 0...8) {
 		var animNames = ["idle0", "idle1", "idle2", "idle3", "oofOwieMyBones", "high", "low"];
@@ -42,46 +38,25 @@ function postCreate() {
 	}
 }
 
-function postUpdate() {
-	if (leftDude.animation.curAnim == null) return;
-	
-	leftDude.offset.x = 50 * StringTools.startsWith(leftDude.animation.curAnim.name, "idle");
-	rightDude.offset.x = -30 * StringTools.startsWith(rightDude.animation.curAnim.name, "idle");
-
-	if (StringTools.startsWith(leftDude.animation.curAnim.name, "idle"))
-		leftDude.animation.curAnim.curFrame = leftDude.animation.curAnim.curFrame * (leftDude.animation.curAnim.curFrame < 15) + 14 * (leftDude.animation.curAnim.curFrame >= 15);
-	if (StringTools.startsWith(rightDude.animation.curAnim.name, "idle"))
-		rightDude.animation.curAnim.curFrame = rightDude.animation.curAnim.curFrame * (rightDude.animation.curAnim.curFrame < 15) + 14 * (rightDude.animation.curAnim.curFrame >= 15);
-}
-
 function beatHit(curBeat:Int) {
 	leftCooldown -= 1;
 	rightCooldown -= 1;
-	SMACCEMleft -= 1 * (leftDude.visible && curBeat > 32);
-	SMACCEMright -= 1 * (rightDude.visible && curBeat > 32);
-	/*if (SMACCEMleft <= 0) {
+	if (SMACCEMleft) {
 		ded(leftDude, "swingLEFT");
-		SMACCEMleft = 30;
+		SMACCEMleft = false;
 		leftCooldown = 10;
 	}
-	if (SMACCEMright <= 0) {
+	if (SMACCEMright) {
 		ded(rightDude, "swingRIGHT");
-		SMACCEMright = 30;
+		SMACCEMright = false;
 		rightCooldown = 10;
-	}*/
+	}
 
 	if (leftCooldown <= 0 && FlxG.random.bool(5)) {
 		ello(leftDude);
-		leftDude.animation.finishCallback = function(name) {
-			SMACCEMleft = 2;
-		};
 	}
 	if (rightCooldown <= 0 && FlxG.random.bool(5)) {
 		ello(rightDude);
-		SMACCEMright = true;
-		rightDude.animation.finishCallback = function(name) {
-			SMACCEMright = 2;
-		};
 	}
 
 	if (curBeat > 16 && curBeat < 32 && curBeat % 2 == 0 && StringTools.startsWith(leftDude.animation.curAnim.name, "idle")) {
@@ -92,11 +67,26 @@ function beatHit(curBeat:Int) {
 
 function ello(dude:FlxSprite) {
 	dude.visible = true;
-	dude.animation.play("low", true);
+	var isLeft = (dude == leftDude);
+	var anims = ["low", "high"];
+	var offsets = [
+		{x: -150, y: -30},
+		{x: -130, y: -20},
+		{x: -130, y: -30},
+		{x: -120, y: 30}
+	];
+	var leftOffsets = [90, 170, 190, 210];
+	var multX:Int = 1 - (2 * isLeft);
+	dude.animation.play(anims[FlxG.random.int(0, 1)], true);
 	dude.animation.finishCallback = function(name) {
-		dude.animation.play("high", true);
+		var randomNum = FlxG.random.int(0, 3);
+		dude.offset.set(offsets[randomNum].x * multX - (leftOffsets[randomNum] * isLeft), offsets[randomNum].y);
+		dude.animation.play("idle" + randomNum, true);
 		dude.animation.finishCallback = function(name) {
-			dude.animation.play("idle" + FlxG.random.int(0, 3), true);
+			if (isLeft && curBeat > 32)
+				SMACCEMleft = true;
+			else if (curBeat > 32)
+				SMACCEMright = true;
 		};
 	};
 }
@@ -104,9 +94,9 @@ function ello(dude:FlxSprite) {
 function ded(dude:FlxSprite, swingAnim:String) {
 	gf.playAnim(swingAnim, true);
 	dude.animation.play("oofOwieMyBones", true);
+	dude.offset.set(0, 0);
 	dude.animation.finishCallback = function(name) {
 		dude.visible = false;
-		dude.animation.finishCallback = normAnimFinish;
 	};
 }
 
@@ -128,8 +118,15 @@ function stepHit() {
 		ded(rightDude, "swingRIGHT");
 		for (i in 0...4)
 			FlxTween.tween(cpuStrums.members[i], {x: cpuStrums.members[i].x + 640}, Conductor.crochet / 500, {ease: FlxEase.circOut});
-	case 129:
-		gf.script.set("onDance", normOnDance);
+		var ogAnimFinish = gf.animation.finishCallback;
+		gf.animation.finishCallback = function(name) {
+			gf.script.set("onDance", function(event) {
+				event.cancel();
+				var danceAnim = (gf.danced = !gf.danced) ? "danceLeft-bat" : "danceRight-bat";
+				gf.playAnim(danceAnim, true, "DANCE");
+			});
+			gf.animation.finishCallback = ogAnimFinish;
+		}
 	case 184:
 		for (i in 0...4)
 			FlxTween.tween(playerStrums.members[i], {x: playerStrums.members[i].x - 640}, Conductor.crochet / 500, {ease: FlxEase.circOut});
