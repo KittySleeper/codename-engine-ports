@@ -1,22 +1,26 @@
 <!DOCTYPE codename-engine-stage>
-<stage zoom="0.65" stage="bar">
-	<sprite scrolly="0.5" x="-1270" updateHitbox="true" sprite="stages/bar/sky" y="-570" scale="1.5" scrollx="0.5" name="sky"/>
-	<sprite x="-280" updateHitbox="true" sprite="stages/bar/barPeople" y="266" scale="1.2" name="barPeople">
-		<anim loop="false" fps="15" anim="" name=""/>
+<stage zoom="0.65" name="bar" folder="stages/bar/">
+	<sprite scrolly="0.2" x="-670" sprite="sky" y="-300" scrollx="0.2" name="sky"/>
+
+	<sprite x="-173" sprite="barPeople" y="301" name="barPeople">
+		<anim loop="true" fps="12" anim="" name="i"/>
 	</sprite>
-	<sprite x="-495" updateHitbox="true" sprite="stages/bar/bar" y="-55" scale="1.2" name="bar"/>
-	<sprite x="-970" updateHitbox="true" sprite="stages/bar/sidewalk" y="630" scale="1.3" name="sidewalk"/>
-	<sprite x="-1075" updateHitbox="true" sprite="stages/bar/ground" y="685" scale="1.3" name="ground"/>
-	<sprite x="-635" updateHitbox="true" sprite="stages/bar/bikeGuyLeft" y="135" name="bikeGuyLeft">
-		<anim loop="false" fps="24" anim="" name=""/>
+	<sprite x="-419" sprite="bar" y="51" name="bar"/>
+
+	<sprite x="-609" sprite="sidewalk" y="611" name="sidewalk"/>
+	<sprite x="-658" sprite="ground" y="692" name="ground"/>
+
+	<sprite x="-572" sprite="bikeGuyLeft" y="269" name="bikeGuyLeft">
+		<anim loop="false" fps="24" anim="" name="idle"/>
 	</sprite>
-	<sprite x="1190" updateHitbox="true" sprite="stages/bar/bikeGuyRight" y="135" name="bikeGuyRight">
-		<anim loop="false" fps="24" anim="" name=""/>
+	<sprite x="1313" sprite="bikeGuyRight" y="250" name="bikeGuyRight">
+		<anim loop="false" fps="24" anim="" name="idle"/>
 	</sprite>
+
 	<girlfriend/>
 	<dad/>
 	<boyfriend/>
-	<sprite scrolly="0.2" x="-380" sprite="stages/bar/fgGuys" y="595" scrollx="0.2" name="fgGuys">
-		<anim loop="false" fps="24" anim="" name=""/>
+	<sprite scrolly="0.3" x="-367" sprite="fgGuys" y="665" scrollx="0.1" name="fgGuys">
+		<anim loop="false" fps="24" anim="" name="idle"/>
 	</sprite>
 </stage>
